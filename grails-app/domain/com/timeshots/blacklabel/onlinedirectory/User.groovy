@@ -25,4 +25,30 @@ class User {
 		password column: '`password`'
 		id generator:"uuid"
 	}
+
+	def beforeInsert(){
+		if(password != null){
+			encodePassword()
+		}
+	}
+
+	def beforeUpdate(){
+		if(isDirty('password')){
+			encodePassword()
+		}
+	}
+
+	protected void ecodePassword(){
+		password = springSecurityService.encodePassword(password)
+	}
+
+	def boolean isCompletelyRegistered(){
+		boolean isCompletelyRegistered = false
+
+		if(username && password){
+			isCompletelyRegistered = true
+		}
+
+		return isCompletelyRegistered
+	}
 }
