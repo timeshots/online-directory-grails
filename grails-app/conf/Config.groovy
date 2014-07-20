@@ -31,6 +31,23 @@ grails.mime.types = [ // the first one is the default format
     xml:           ['text/xml', 'application/xml']
 ]
 
+/***********************************************************************/
+grails.plugins.springsecurity.securityConfigType = 'InterceptUrlMap'
+grails.plugins.springsecurity.interceptUrlMap = [
+        '/person/index':    ['ROLE_USER, ROLE_ADMIN, IS_AUTHENTICATED_FULLY'],
+        '/person*':       ['ROLE_ADMIN'],
+        '/address*':      ['ROLE_ADMIN'],
+        '/js*':           ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/css*':          ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/images*':       ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '':               ['IS_AUTHENTICATED_FULLY'],
+        '/user*':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/login*':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/logout*':       ['IS_AUTHENTICATED_ANONYMOUSLY']
+
+]
+/***********************************************************************/
+
 // URL Mapping Cache Max Size, defaults to 5000
 //grails.urlmapping.cache.maxsize = 1000
 

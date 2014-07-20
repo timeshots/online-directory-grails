@@ -13,6 +13,10 @@ class UserController {
         respond User.list(params), model:[userInstanceCount: User.count()]
     }
 
+    def auth = {
+        getLogin()
+    }
+
     def login = {
         if(params?.username == "admin" && params?.password == "pass"){
             flash.message = "login succeed"
@@ -40,20 +44,16 @@ class UserController {
     @Transactional
     def save(User userInstance) {
         if (userInstance == null) {
-			println "****************** Test First Line"
-            notFound()
+		    notFound()
             return
         }
 
         if (userInstance.hasErrors()) {
-			println "****************** Test Second Line"
-            respond userInstance.errors, view:'create'
+		    respond userInstance.errors, view:'create'
             return
         }
 
-		println "****************** Test Third Line"
         userInstance.save flush:true
-		println "****************** Test Fourth Line"
 
         request.withFormat {
             form multipartForm {
