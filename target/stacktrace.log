@@ -5818,3 +5818,117 @@ Caused by: java.lang.NoSuchMethodError: com.timeshots.blacklabel.onlinedirectory
 	at org.grails.datastore.mapping.engine.event.AbstractPersistenceEventListener.onApplicationEvent(AbstractPersistenceEventListener.java:47)
 	at com.timeshots.blacklabel.onlinedirectory.UserController$$EOjtnmNs.$tt__save(UserController.groovy:36)
 	... 5 more
+2014-07-19 18:40:26,820 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.codehaus.groovy.grails.plugins.web.api.ControllersApi.redirect(ControllersApi.java:274)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.GroovyObjectSupport.invokeMethod(GroovyObjectSupport.java:44)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure9_closure14(UserController.groovy:45)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure9_closure14(UserController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+	at org.codehaus.groovy.grails.plugins.web.api.RequestMimeTypesApi.withFormat(RequestMimeTypesApi.groovy:95)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:42)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.save_closure4(UserController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:62)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:131)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:59)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+2014-07-19 18:40:26,843 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure9_closure14(UserController.groovy:45)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:42)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+2014-07-19 18:40:26,845 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure9_closure14(UserController.groovy:45)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:42)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+2014-07-19 18:40:26,845 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure9_closure14(UserController.groovy:45)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:42)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+2014-07-19 18:40:26,851 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure9_closure14(UserController.groovy:45)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:42)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+2014-07-19 18:40:26,851 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure9_closure14(UserController.groovy:45)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:42)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+2014-07-19 18:40:27,474 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:118)
+2014-07-19 18:40:27,474 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:118)
+2014-07-19 18:40:27,474 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:118)
+2014-07-19 18:40:27,474 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:118)
+2014-07-19 18:40:27,475 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:118)
+2014-07-19 18:40:27,475 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:118)
+2014-07-19 18:40:27,625 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:137)
+2014-07-19 18:40:27,628 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:137)
+2014-07-19 18:40:27,628 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:137)
+2014-07-19 18:40:27,629 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:137)
+2014-07-19 18:40:27,629 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:137)
+2014-07-19 18:40:27,629 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:137)
