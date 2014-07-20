@@ -13,6 +13,22 @@ class UserController {
         respond User.list(params), model:[userInstanceCount: User.count()]
     }
 
+    def login = {
+        if(params?.username == "admin" && params?.password == "pass"){
+            flash.message = "login succeed"
+            session.user = "admin"
+        }else{
+            flash.message = "login failed"
+        }
+
+        redirect(action: 'index')
+    }
+
+    def logout = {
+        session.user = null
+        redirect(action: 'index')
+    }
+
     def show(User userInstance) {
         respond userInstance
     }

@@ -50,6 +50,7 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         // runtime 'mysql:mysql-connector-java:5.1.27'
         // runtime 'org.postgresql:postgresql:9.3-1100-jdbc41'
+        //runtime ':twitter-bootstrap:3.1.1'
     }
 
     plugins {
@@ -78,5 +79,13 @@ grails.project.dependency.resolution = {
         //compile ":less-asset-pipeline:1.5.3"
         //compile ":coffee-asset-pipeline:1.5.0"
         //compile ":handlebars-asset-pipeline:1.3.0.1"
+
+        //compile ":bootstrap-theme:1.0.RC3"
+        //compile ":kickstart-with-bootstrap:1.1.0"
+        compile ":platform-ui:1.0.RC7"
+        compile ":twitter-bootstrap:2.3.0"
+        compile ":lesscss-resources:1.3.3"
+
+        //compile ":twitter-bootstrap:3.2.1"
     }
 }
