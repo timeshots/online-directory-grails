@@ -48,8 +48,10 @@ grails.project.dependency.resolution = {
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
-        // runtime 'mysql:mysql-connector-java:5.1.27'
+        runtime 'mysql:mysql-connector-java:5.1.27'
+        //runtime 'mysql:mysql-connector-java:5.1.18'
         // runtime 'org.postgresql:postgresql:9.3-1100-jdbc41'
+        //runtime ':twitter-bootstrap:3.1.1'
     }
 
     plugins {
@@ -65,6 +67,13 @@ grails.project.dependency.resolution = {
         runtime ":database-migration:1.4.0"
         runtime ":jquery:1.11.1"
         runtime ":resources:1.2.7"
+
+        compile ':spring-security-core:1.2.7.3'
+        //compile ':mongodb:1.0.0.GA'
+        //compile ':webxml:1.4.1'
+        //compile ':ws-client:1.0'
+        //runtime ':lesscss-resources:1.3.0.3'
+
         // Uncomment these (or add new ones) to enable additional resources capabilities
         //runtime ":zipped-resources:1.0.1"
         //runtime ":cached-resources:1.1"
@@ -78,5 +87,13 @@ grails.project.dependency.resolution = {
         //compile ":less-asset-pipeline:1.5.3"
         //compile ":coffee-asset-pipeline:1.5.0"
         //compile ":handlebars-asset-pipeline:1.3.0.1"
+
+        //compile ":bootstrap-theme:1.0.RC3"
+        //compile ":kickstart-with-bootstrap:1.1.0"
+        compile ":platform-ui:1.0.RC7"
+        compile ":twitter-bootstrap:2.3.0"
+        compile ":lesscss-resources:1.3.3"
+
+        //compile ":twitter-bootstrap:3.2.1"
     }
 }
