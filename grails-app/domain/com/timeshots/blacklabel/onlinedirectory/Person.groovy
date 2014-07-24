@@ -6,12 +6,13 @@ package com.timeshots.blacklabel.onlinedirectory
 class Person {
     String firstName;
     String lastName;
-    List<Address> addresses;
+    Address address;
 
-    static hasMany = [addresses: Address]
+    static hasMany = [address: Address]
 
     static constraints = {
-        firstName(blank: false)
-        lastName(blank: false)
+        firstName(nullable: false)
+        lastName(nullable: false)
+        address(nullable: true)
     }
 }
