@@ -13,9 +13,9 @@ class Address {
 
     static constraints = {
         streetAddress(blank: false)
-        cityy(blank: false)
-        state(blank: false, size: 2.2)
-        zipCode(blank: false, size: 5.5, validator: {val, obj ->
+        city(nullable: false)
+        state(nullable: false)
+        zipCode(nullable: false, validator: {val, obj ->
             val?.isNumber()
         })
     }
