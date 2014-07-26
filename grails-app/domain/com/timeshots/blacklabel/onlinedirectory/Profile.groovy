@@ -5,8 +5,6 @@ package com.timeshots.blacklabel.onlinedirectory
  */
 class Profile {
 
-    String firstName
-    String lastName
     Date birthDate
     String gender
     String interestedIn     // women or men
@@ -20,8 +18,6 @@ class Profile {
     Contact contact
 
     static constraints = {
-        firstName(nullable: false, size: 3..35)
-        lastName(nullable: false, size: 3..35)
         birthDate(nullable: true)
         gender(nullable: false, size: 4..6)
         interestedIn(nullable: true)

@@ -1,5 +1,6 @@
 import com.timeshots.blacklabel.onlinedirectory.Address
 import com.timeshots.blacklabel.onlinedirectory.Person
+import com.timeshots.blacklabel.onlinedirectory.User
 
 class BootStrap {
     def init = { servletContext ->
@@ -10,6 +11,9 @@ class BootStrap {
         def johnDoe = new Person(firstName: 'John', lastName: 'Doe', address: add_one).save(failOnError: true)
         def larryBor = new Person(firstName: 'Larry', lastName: 'Borrero', address: add_two).save(failOnError: true)
         def darKim = new Person(firstName: 'Darel', lastName: 'Kim', address: add_three).save(failOnError: true)
+
+        User larry = new User(firstName: 'Larry', lastName: 'Borrero', emailAddress: 'redwolfgang20@gmail.com', username: 'redwolfgang20', password: 'redwolfgang1990', hasConfirmedEmail: true).save(flush: true, failOnError: true)
+        User whitehot = new User(firstName: 'White', lastName: 'Hot', emailAddress: 'whitehot@gmail.com', username: 'white', password: 'whitehot', hasConfirmedEmail: true).save(flush: true, failOnError: true)
     }
 
     def destroy = {
