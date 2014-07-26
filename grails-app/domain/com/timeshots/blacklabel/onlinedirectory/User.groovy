@@ -8,7 +8,7 @@ class User {
 	String emailAddress
 	String username
 	String password
-    Boolean hasConfirmedEmail
+    Boolean hasConfirmedEmail = false
     String id
 
     static transients = ['springSecurityService']
@@ -24,7 +24,7 @@ class User {
 
     static mapping = {
         hasConfirmedEmail(defaultValue: false)
-        table 'users'
+        table 'user'
         password column: '`password`'
         id generator:'uuid'
     }
