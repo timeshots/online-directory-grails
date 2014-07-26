@@ -10,14 +10,9 @@ class Address {
     String zipCode
 
     static constraints = {
-        streetAddress(nullable: false)
+        streetAddress(nullable: true)
         city(nullable: false)
-        state(nullable: false)
+        state(nullable: true)
         zipCode(nullable: false)
-    }
-
-    @Override
-    String toString(){
-        return streetAddress
     }
 }
