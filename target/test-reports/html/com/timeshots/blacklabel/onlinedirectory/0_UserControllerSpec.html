@@ -44,10 +44,10 @@
                         tests
                     
                         with
-                        2 errors
+                        one error
 
                         and
-                        one failure
+                        2 failures
                         .
                     </h3>
 </div>
@@ -56,7 +56,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">Test the index action returns the correct model</b>
 </p>
-<p class="summary">Executed in 5.272 seconds.</p>
+<p class="summary">Executed in 5.843 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -66,7 +66,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">Test the create action returns the correct model</b>
 </p>
-<p class="summary">Executed in 0.273 seconds.</p>
+<p class="summary">Executed in 0.279 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -76,7 +76,7 @@
 <p>
 <span class="icon error"></span><b class="testname message error">Test the save action correctly persists an instance</b>
 </p>
-<p class="summary">Executed in 0.648 seconds.</p>
+<p class="summary">Executed in 0.761 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -84,8 +84,8 @@
 <b class="message">Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead </b>
 </p>
 <pre>org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
-	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure9_closure14(UserController.groovy:45)
-	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:42)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure12_closure17(UserController.groovy:61)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:58)
 	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
 </pre>
 </div>
@@ -97,7 +97,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">Test that the show action returns the correct model</b>
 </p>
-<p class="summary">Executed in 0.153 seconds.</p>
+<p class="summary">Executed in 0.166 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -107,25 +107,43 @@
 <p>
 <span class="icon success"></span><b class="testname message success">Test that the edit action returns the correct model</b>
 </p>
-<p class="summary">Executed in 0.113 seconds.</p>
+<p class="summary">Executed in 0.119 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
-<div class="testcase clearfix error grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test the update action performs an update on a valid domain instance">
 <div class="grid_3 alpha">
 <p>
-<span class="icon error"></span><b class="testname message error">Test the update action performs an update on a valid domain instance</b>
+<span class="icon failure"></span><b class="testname message failure">Test the update action performs an update on a valid domain instance</b>
 </p>
-<p class="summary">Executed in 0.354 seconds.</p>
+<p class="summary">Executed in 0.514 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
 <p>
-<b class="message">Cannot get property 'id' on null object</b>
+<b class="message">Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@13bedb9
+</b>
 </p>
-<pre>java.lang.NullPointerException: Cannot get property 'id' on null object
-	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:118)
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@13bedb9
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:97)
 </pre>
 </div>
 </div>
@@ -136,25 +154,33 @@
 <p>
 <span class="icon failure"></span><b class="testname message failure">Test that the delete action deletes an instance if it exists</b>
 </p>
-<p class="summary">Executed in 0.152 seconds.</p>
+<p class="summary">Executed in 0.241 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
 <p>
 <b class="message">Condition not satisfied:
 
-User.count() == 1
-     |       |
-     0       false
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@19049bb
 </b>
 </p>
 <pre>junit.framework.AssertionFailedError: Condition not satisfied:
 
-User.count() == 1
-     |       |
-     0       false
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@19049bb
 
-	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:137)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:128)
 </pre>
 </div>
 </div>
@@ -166,9 +192,6 @@ User.count() == 1
 <pre class="stdout">--Output from Test the index action returns the correct model--
 --Output from Test the create action returns the correct model--
 --Output from Test the save action correctly persists an instance--
-****************** Test Second Line
-****************** Test Third Line
-****************** Test Fourth Line
 --Output from Test that the show action returns the correct model--
 --Output from Test that the edit action returns the correct model--
 --Output from Test the update action performs an update on a valid domain instance--

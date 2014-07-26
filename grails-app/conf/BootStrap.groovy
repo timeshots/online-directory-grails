@@ -3,6 +3,7 @@ import com.timeshots.blacklabel.onlinedirectory.Person
 
 class BootStrap {
 
+
     def init = { servletContext ->
         Address add_one = new Address(state: 'NY', city: 'Windsor', streetAddress: '117 W 2nd St', zipCode: '11111').save(failOnError: true)
         Address add_two = new Address(state: 'NY', city: 'Windsor', streetAddress: '117 W 2nd St', zipCode: '22222').save(failOnError: true)

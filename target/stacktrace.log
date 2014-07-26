@@ -14586,3 +14586,195 @@ grails.validation.ValidationException: Validation Error(s) occurred during save(
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
+2014-07-26 10:19:12,167 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.codehaus.groovy.grails.plugins.web.api.ControllersApi.redirect(ControllersApi.java:274)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.GroovyObjectSupport.invokeMethod(GroovyObjectSupport.java:44)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure12_closure17(UserController.groovy:61)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure12_closure17(UserController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+	at org.codehaus.groovy.grails.plugins.web.api.RequestMimeTypesApi.withFormat(RequestMimeTypesApi.groovy:95)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:58)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.save_closure7(UserController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:62)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:131)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:59)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+2014-07-26 10:19:12,221 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure12_closure17(UserController.groovy:61)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:58)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+2014-07-26 10:19:12,222 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure12_closure17(UserController.groovy:61)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:58)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+2014-07-26 10:19:12,222 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure12_closure17(UserController.groovy:61)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:58)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+2014-07-26 10:19:12,228 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure12_closure17(UserController.groovy:61)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:58)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+2014-07-26 10:19:12,229 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure12_closure17(UserController.groovy:61)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:58)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+2014-07-26 10:19:13,018 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@13bedb9
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:97)
+2014-07-26 10:19:13,025 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@13bedb9
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:97)
+2014-07-26 10:19:13,025 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@13bedb9
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:97)
+2014-07-26 10:19:13,026 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@13bedb9
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:97)
+2014-07-26 10:19:13,026 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@13bedb9
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:97)
+2014-07-26 10:19:13,026 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@13bedb9
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:97)
+2014-07-26 10:19:13,262 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@19049bb
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:128)
+2014-07-26 10:19:13,263 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@19049bb
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:128)
+2014-07-26 10:19:13,265 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@19049bb
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:128)
+2014-07-26 10:19:13,266 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@19049bb
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:128)
+2014-07-26 10:19:13,266 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@19049bb
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:128)
+2014-07-26 10:19:13,266 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/user/index'
+|        |             |
+|        /             false
+|                      10 differences (9% similarity)
+|                      /(----------)
+|                      /(user/index)
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@19049bb
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:128)
