@@ -32,8 +32,8 @@ grails.mime.types = [ // the first one is the default format
 ]
 
 /***********************************************************************/
-grails.plugins.springsecurity.securityConfigType = 'InterceptUrlMap'
-grails.plugins.springsecurity.interceptUrlMap = [
+grails.plugin.springsecurity.securityConfigType = 'InterceptUrlMap'
+grails.plugin.springsecurity.interceptUrlMap = [
         '/person/index':    ['ROLE_USER, ROLE_ADMIN, IS_AUTHENTICATED_FULLY'],
         '/person*':       ['ROLE_ADMIN'],
         '/address*':      ['ROLE_ADMIN'],
