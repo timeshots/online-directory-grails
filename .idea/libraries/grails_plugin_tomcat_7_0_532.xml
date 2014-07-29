@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="grails-plugin-tomcat-7.0.53">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/target/work/plugins/tomcat-7.0.53/grails-plugin-tomcat-7.0.53.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

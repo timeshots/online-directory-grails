@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>online-directory-grails</name>
+	<name>social-network-grails</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -26,7 +26,7 @@
 		<link>
 			<name>.link_to_grails_plugins</name>
 			<type>2</type>
-			<location>/home/borrero/Documents/Developer/workspace/online-directory-grails/target/work/plugins</location>
+			<location>/home/borrero/Documents/Developer/workspace/social-network-grails/target/work/plugins</location>
 		</link>
 	</linkedResources>
 </projectDescription>

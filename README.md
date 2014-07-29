@@ -1,4 +1,4 @@
-online-directory-grails
-=======================
+social-network-grails
+=====================
 
-Online Directory Using Grails Framework
+simple start-up social network project for practice

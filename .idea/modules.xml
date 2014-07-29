@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/target/work/plugins/cache-1.1.2/src/cache-1.1.2.iml" filepath="$PROJECT_DIR$/target/work/plugins/cache-1.1.2/src/cache-1.1.2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/grails-app/grails-app.iml" filepath="$PROJECT_DIR$/grails-app/grails-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/target/work/plugins/plugins.iml" filepath="$PROJECT_DIR$/target/work/plugins/plugins.iml" />
-      <module fileurl="file://$PROJECT_DIR$/target/work/plugins/resources-1.2.7/src/resources-1.2.7.iml" filepath="$PROJECT_DIR$/target/work/plugins/resources-1.2.7/src/resources-1.2.7.iml" />
-      <module fileurl="file://$PROJECT_DIR$/target/work/plugins/scaffolding-2.0.3/src/scaffolding-2.0.3.iml" filepath="$PROJECT_DIR$/target/work/plugins/scaffolding-2.0.3/src/scaffolding-2.0.3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/target/work/plugins/tomcat-7.0.53/src/tomcat-7.0.53.iml" filepath="$PROJECT_DIR$/target/work/plugins/tomcat-7.0.53/src/tomcat-7.0.53.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social-network-grails.iml" filepath="$PROJECT_DIR$/social-network-grails.iml" />
     </modules>
   </component>
 </project>

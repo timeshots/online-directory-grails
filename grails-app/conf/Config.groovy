@@ -31,29 +31,8 @@ grails.mime.types = [ // the first one is the default format
     xml:           ['text/xml', 'application/xml']
 ]
 
-/***********************************************************************/
-grails.plugin.springsecurity.securityConfigType = 'InterceptUrlMap'
-grails.plugin.springsecurity.interceptUrlMap = [
-        '/person/index':    ['ROLE_USER, ROLE_ADMIN, IS_AUTHENTICATED_FULLY'],
-        '/person*':       ['ROLE_ADMIN'],
-        '/address*':      ['ROLE_ADMIN'],
-        '/js*':           ['IS_AUTHENTICATED_ANONYMOUSLY'],
-        '/css*':          ['IS_AUTHENTICATED_ANONYMOUSLY'],
-        '/images*':       ['IS_AUTHENTICATED_ANONYMOUSLY'],
-        '':               ['IS_AUTHENTICATED_FULLY'],
-        '/user*':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
-        '/login*':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
-        '/logout*':       ['IS_AUTHENTICATED_ANONYMOUSLY']
-
-]
-/***********************************************************************/
-
 // URL Mapping Cache Max Size, defaults to 5000
 //grails.urlmapping.cache.maxsize = 1000
-
-// What URL patterns should be processed by the resources plugin
-grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
-grails.resources.adhoc.includes = ['/images/**', '/css/**', '/js/**', '/plugins/**']
 
 // Legacy setting for codec used to encode data with ${}
 grails.views.default.codec = "html"
@@ -117,7 +96,7 @@ environments {
 }
 
 // log4j configuration
-log4j = {
+log4j.main = {
     // Example of changing the log pattern for the default console appender:
     //
     //appenders {
